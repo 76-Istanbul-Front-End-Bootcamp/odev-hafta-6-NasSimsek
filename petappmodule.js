@@ -5,7 +5,6 @@ window.editPet = (id) => {
     document.querySelector("#petImage").value = $cardEl.querySelector("img").src;
     window.isEditing = id;
 };
-
 const addPet = (pet) => {
     const petCardHTML = `<div class="card" style="margin-bottom: 20px" id="pet${pet.id}">
                     <img src=${pet.image} class="card-img-top" onclick="editPet(${pet.id})">
